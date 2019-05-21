@@ -1,0 +1,194 @@
+                /* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+                /* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+                /* BORDER-BOX SIZING */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Single-direction margin declaration to establish vertical rhythm. */
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+body {
+  width: 100%;
+}
+
+.cover {
+	background-image: url("https://imgur.com/ecINRiv.jpg");
+	height: 100vh;
+	width: 100%;
+	background-attachment: fixed;      /* which means this is a paralax website */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box-text {
+  height: 100%;
+  padding: 2%;
+  padding-bottom: 4%;
+  padding-top: 30%;
+}
+
+h1 {
+	font-family: 'Six Caps', sans-serif;
+	margin: 0px;
+  /*
+  position: relative;
+  left: 660px;
+  top: 500px;
+  */
+  font-size: 90px;
+  position: relative;
+  color: darkred;
+}
+
+.gombocska {
+	background-color: darkred;
+	padding: 20px;
+	color: yellow;
+	font-family: Arial;
+	font-size: 20px;
+	text-decoration: none;
+	position: relative;
+  /*
+  	left: 608px;
+	top: 530px;
+  */
+	border: 3px ridge yellow;
+}
+
+a {
+  font-family: 'Six Caps', sans-serif;
+}
+
+a:hover {
+    color: #eda087;
+    transition: color .15s ease-in-out;
+}
+
+.content1 {
+	background-color: darkred;
+	padding: 20px;
+	color: yellow;
+	margin: 0px;
+}
+
+#firstid {
+	color: springgreen;
+	font-size: 25px;
+}
+
+#titles {font-family: 'Six Caps', sans-serif;
+	color: yellow;
+	font-size: 45px;
+}
+
+.lista {
+	padding-top: 0px;
+    	padding-right: 0px;
+    	padding-bottom: 0px;
+    	padding-left: 20px;
+}
+
+
+.vacuum {
+	background-image: url("https://imgur.com/ecINRiv.jpg");
+	background-color: transparent-black;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+.content2 {
+	background-color: pink;
+	padding: 20px;
+	color: black;
+	margin: 0px;
+}
+
+#cimek2 {font-family: 'Six Caps', sans-serif;
+	color: darkred;
+	font-size: 45px;
+}
+
+
+.content3 {
+	background-color: #014A53;
+	padding: 20px;
+	color: #bbc4c9;
+	margin: 0px;
+
+}
+
+
+#Phillycim {font-family: 'Six Caps', sans-serif;
+	color: #bbc4c9;
+	font-size: 45px;
+}
+
+.content4 {
+	background-color: #f2f9f4;
+	padding: 20px;
+	color: black;
+	margin: 0px;
+}
+
+#html5cim {font-family: 'Six Caps', sans-serif;
+	color: black;
+	font-size: 45px;
+}
+
+.content5 {
+	background-color: #D3BC8D;
+	padding: 20px;
+	color: #101820;
+	margin: 0px;
+}
+
+#graphicscim {
+	font-family: 'Six Caps', sans-serif;
+	color: black;
+	font-size: 45px;
+}
+
+.map {
+    width:500px;
+    height:300px;
+    background: yellow;
+}
