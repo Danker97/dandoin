@@ -1,0 +1,213 @@
+                /* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+                /* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+                /* BORDER-BOX SIZING */
+
+* {
+    box-sizing: border-box;
+}
+
+              /* Single-direction margin declaration to establish vertical rhythm. */
+
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+
+          /*========== BASE STYLES ===========*/
+
+
+body {
+  width: 100%;
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+
+}
+
+a {
+  font-family: 'Six Caps', sans-serif;
+}
+
+a:hover {
+    color: #eda087;
+    transition: color .15s ease-in-out;
+}
+
+section {
+  width: 90%;
+  margin: 20px;
+}
+
+   /*============ HEADER STYLES ===========*/
+
+
+.cover {
+	height: 100vh;
+	width: 100%;
+	background-attachment: fixed;      /* which means this is a paralax website */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    display: table;
+    text-align: center;               /* these two keep the text-box in the middle*/
+
+}
+
+.box-text {
+  height: 100%;
+  padding: 2%;
+  padding-bottom: 4%;
+  padding-top: 30%;
+}
+
+h1 {
+	font-family: 'Six Caps', sans-serif;
+	margin: 0px;
+  font-size: 90px;
+  position: relative;
+  color: darkred;
+}
+
+.gombocska {
+	background-color: darkred;
+	padding: 20px;
+	color: yellow;
+	font-family: Arial;
+	font-size: 20px;
+	text-decoration: none;
+	position: relative;  
+	border: 3px ridge yellow;
+}
+
+
+
+        /*============ VACUUM STYLES ===========*/
+
+
+
+.vacuum {
+	background-color: transparent-black;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+        /*============ CONTENT STYLES ===========*/
+
+
+.content1 {
+	background-color: hsla(20, 0%, 50%, .7);
+	padding: 20px;
+}
+
+
+.content2 {
+    background-color: hsla(20, 0%, 50%, .7);
+    padding: 20px;
+}
+
+
+.content3 {
+    background-color: hsla(20, 0%, 50%, .7);
+    padding: 20px;
+}
+
+.content4 {
+	background-color: hsla(20, 0%, 50%, .7);
+	padding: 20px;
+}
+
+.content5 {
+	background-color: hsla(20, 0%, 50%, .7);
+	padding: 20px;
+}
+
+
+        /*============ TITLE STYLES ===========*/
+
+
+#Phillycim {font-family: 'Six Caps', sans-serif;
+	color: #bbc4c9;
+	font-size: 45px;
+}
+
+
+#html5cim {font-family: 'Six Caps', sans-serif;
+	color: black;
+	font-size: 45px;
+}
+
+
+#titles {
+	font-family: 'Six Caps', sans-serif;
+	color: black;
+	font-size: 45px;
+}
+
+
+        
+          /*============ VIDEO STYLES ===========*/
+
+figure {
+    height: 0;
+    padding-bottom: 20.25%; /* 16:9 aspect ratio */
+    position: relative;
+    min-height: 200px;
+    min-width: 340px;
+    max-width: 500px;
+    max-height: 270px;
+}
+
+figure iframe {
+	position: absolute;
+	width: 100%;
+    height: 100%;
+}
