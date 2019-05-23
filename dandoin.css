@@ -79,52 +79,142 @@ a:hover {
     transition: color .15s ease-in-out;
 }
 
-section {
+article {
   width: 90%;
   margin: 20px;
 }
 
+
    /*============ HEADER STYLES ===========*/
 
 
-.cover {
-	height: 100vh;
-	width: 100%;
-	background-attachment: fixed;      /* which means this is a paralax website */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    display: table;
-    text-align: center;               /* these two keep the text-box in the middle*/
 
+.box-text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .box-text {
-  height: 100%;
-  padding: 2%;
-  padding-bottom: 4%;
-  padding-top: 30%;
+  margin: 0 auto;
+  padding: .625rem;
+  color: hsla(0,0%,100%,.9);
+  background: hsla(100,0%,0%,.5);
 }
 
-h1 {
-	font-family: 'Six Caps', sans-serif;
-	margin: 0px;
-  font-size: 90px;
-  position: relative;
-  color: darkred;
+.box-text h1 {
+  font-size: 3.15rem;
+  color: #d2ba87;
+  margin-bottom: 0; /* To negate the effect of the single-direction margin declaration. */
 }
 
-.gombocska {
-	background-color: darkred;
-	padding: 20px;
-	color: yellow;
-	font-family: Arial;
-	font-size: 20px;
-	text-decoration: none;
-	position: relative;  
-	border: 3px ridge yellow;
+.tagline {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
 }
 
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.date {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  vertical-align: middle;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+
+        /* ============= HEADER NAV STYLES ============ */
+
+.header-nav {
+  background-color: rgba(150, 189, 224);
+  padding: 1rem;
+}
+
+.header-nav a {
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  display: block;
+  padding: .5rem 1rem;
+  color: #fff;
+}
+
+.header-nav a:hover {
+  color: hsl(0, 0%, 77%);
+  transition: color .15s ease-in-out;
+}
+
+.sign-up {
+  border: 1px solid hsla(0,0%,100%,.2);
+  border-radius: 9999px;
+}
+
+.sign-up:hover {
+  color: #000;
+  background-color: #fff;
+  transition: background-color .15s ease-in-out;
+}
+
+@media (min-width: 768px) {
+
+  .header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .header-nav a {
+    float: right;
+  }
+
+  .home {
+    float: left;
+  }
+
+    /* Clearfix */
+    nav::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+}
+
+section {
+  font-size: 1rem;
+  font-family: 'Space Mono', monospace;
+}
+
+@media (min-width: 768px) {
+
+  section {
+    width: 60%;
+    margin: 5.25rem auto 1.25rem;
+  }
+
+}
+
+p {
+  margin-bottom: 1.25rem;
+  padding: .5rem;
+}
 
 
         /*============ VACUUM STYLES ===========*/
@@ -210,4 +300,50 @@ figure iframe {
 	position: absolute;
 	width: 100%;
     height: 100%;
+}
+
+
+
+          /*============  FOOTER STYLES ===========*/
+
+
+
+
+footer {
+  background: url('http://i.imgur.com/f4jGhSF.png') repeat center;
+    height: 8rem;
+    text-align: center;
+    display: table;
+    width: 100vw;
+    padding: 1rem;
+    font-family: 'Arial', sans-serif;
+  font-size: .875rem;
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+footer small {
+  color: #ccc;
+    letter-spacing: .025rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #c74f78;
+    margin: 0 .5rem;
+  display: inline-block;
+}
+
+.footer-nav a:hover {
+  color: #f26896;
+  transition: color .15s ease-in-out;
+}
+
+strong {
+  font-weight: 700;
 }
