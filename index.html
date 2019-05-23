@@ -15,19 +15,29 @@
 
 <body>
   
-  <header class="cover">
-    <div class="box-text-wrapper">
-      <div class="box-text">
-	   <h1></h1>
-	   <a href="https://kfcfutar.hu/">
-	   <button type="button" class="gombocska"></button></a>
+  <header>
+    <nav class="header-nav">
+  <ul>
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">About me</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+    </nav>
+        <div class="box-text-wrapper">
+        <div class="box-text">
+          <h1>Dan doin' things</h1>
+          <span class="date">The official unofficial page for my shits</span>
         </div>
-    </div>
-  </header>
+      </div>
+    </header>
   
   <main>
-    
-    <section class="content1">
+    <div class="content">
+      <h2>This is what goin' on</h2>
+      
+    <article class="post">
   <div> 
 <p id="titles">This is how I feel everytime when I should do some code</p>
     Posted: 05.22.2019.
@@ -41,416 +51,42 @@
     
   </figure>
 </div>
-    </section>
-
-
+    </article>
 
 <section class="vacuum">
-<div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div> <br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
     </section>
-
-<section class="content2">
-    <div><p id="titles">HÁTÉEMEL Forms</p>
-
-<form action="/ide irányítalak át, ha rányomsz a submit gombra" target="_blank">
-<fieldset>
-<legend>Perszonál adatok...vagy mégsem?</legend>
-  Két néma beszélget. Azt mondja az egyik:<br>
-  <input type="text" name="firstname" value="-">
-  <br>
-  Erre a másik:<br>
-  <input type="text" name="lastname" value="-">
-  
-  <br><br>
-  
-  <input type="submit" value="ez egy hatalmas polyén volt">
-</fieldset>
-</form>
-  <br>Amúgy én egy submit type-os &ltinput&gt elem vagyok. Van ám radio type is, megmutassam?
-<br> Úgy is megmutatom, szarok a véleményedre, nesze:
-
-<br>
-
-<form>
-<br> <input type="radio" name="gender" value="male"> Male
-<br> <input type="radio" name="gender" value="female"> Female
-<br> <input type="radio" name="gender" value="cartmananyja"> Hermafrodita
-</form>
-<br> minek bele value? mondjuk a textboxnÃ¡l jÃ³l néz ki, meg a submitboxnál, de ennél tök fölös
-
-<br><br>
-
- Ha meg nincs az inputnak type-ja, akk csak shimánn texttype, mint a zelsõ kettõ. <span style="color:black"><strong>MÃ‰RNEM TUDOK NORMÃLIS ÅÅÅZIKE BETÅ°T ÃRNI???!</strong></span>
- 
- &nbsp&nbsp&nbsp <span style="color:white"> Edit: AzÃ©rt, mert a headben mÃ¡r az ELEJÃ‰N be kell Ã­rni az  UTF-8 meta kÃ³dot! </span>
- 
-<br> method attrik - get meg post: get nyilvános, post meg kényes adatok submitelésére
-<br> NEVÉN KELL NEVEZNI a dolgokat, nem ám úgy hogy "Tudodki" meg ilyenek! Ha nincs name attri az inputban, nem submiteli az adatot!
-<br> bevágtam már egy ilyen &ltfieldset&gt meg &ltleDDDZZSSEnd&gt elemet, mert akkora király vagyok.
-
-<br><br><br><br><br>
-ide baszarintok egy select formot (value miÃ©rt kell bele?):
-<form>
-<select name="csapatok">
-<option vaue="asdasd">Pats</option>
-<option vaue="asd">Eagles</option>
-<option value="megint" selected>Packers</option>
-<option value="megint">Seahawks</option>
-</select>
-</form>
-
-itt meg mÃ©gegy select form, 3mas size-zal:
-<br> (selected&gt attrival ki tudod vÃ¡lasztani, mi legyen az alapÃ©rtelmezett)
-<form>
-<select name="csapatok" size="3">
-<option >Pats</option>
-<option >Eagles</option>
-<option >Packers</option>
-<option v>Seahawks</option>
-</select>
-</form>
-
-itt meg mÃ©gegy, 3mas size-zal meg multiple&gt attrival Ãºgy, hogy Ctrl-lal tudsz tÃ¶bbet is jelÃ¶lni:
-<form>
-<select name="csapatok" size="3" multiple>
-<option value="asdasd">Pats</option>
-<option value="asd">Eagles</option>
-<option value="megint">Packers</option>
-<option value="megint">Seahawks</option>
-</select>
-</form>
-
-<br>
-
-<form>
-<textarea rows="20" cols="30">Ez meg egy textarea, ami 20x30-as. Itt szerkesztettem, de CSS-ben is ugyanÃ­gy lehet style-ozni width height-tal.
-	Ide a textareaba is lehet Ã­rni, de az csak Ã¡tmeneti, nem mentÅ‘dik el.
-						EgyÃ©bkÃ©nt meg a grÃ¡tÃ¡tvetÅ‘ az egy olyan csÅ‘, amely hÃ¡lÃ³t lÅ‘ ki.</textarea>
-</form>
-<br>
-Ã‰n egy button vagyok, olyan, mint a KFC button, csak Ã©n onclick&gt attrival vagyok ellÃ¡tva.
-<br> <button onclick="alert('edd ki a vetÃ©st')">Gyere rÃ¡m!</button>
-lehet type="button"&gt attri nÃ©lkÃ¼l is Ã­rni, de nem ajÃ¡nlott a bÃ¶ngÃ©szÅ‘k miatt.
-<br> <ins>Hogy tudom az attrik meg az elemek szÃ­nÃ©t megvÃ¡ltoztatni Notepadben??</ins>
-
-<br><br><br>
-
-<form>
-  <input type="text" name="firstname" value="-HellÃ³, itt a taxis!">
-  <br><br>
-  <input type="text" name="lastname" value="-Milyen taxis?">
-  <br><br>
-  <input type="text" name="lastname" value="-Szintaxis.">
-</form>
-
-<br><br>
-
-<div>  
-Fasza lenne, ha egymÃ¡s mellÃ© tudnÃ¡m pakolni a cuccokat, nem kellene ilyen hosszÃºnak lennie a divnek. <ins>Hogy keeeelllll????</ins>
-<br>
-<br><br>
     
-&ltdatalist&gt elem: hasznos, mikor kivÃ¡lasztod where are you from, vagy ilyenek. Meg rÃ¡ is kÃ©rdez, hogy ez az-e.
-<br>Ãme:
-<br>
-<form action="ide adod be az adatokat">
-  <input list="vÃ¡rosok">
-  <datalist id="vÃ¡rosok"> ez az idelÃ©s Kell, mert ezzel referÃ¡lok az inputlistnek.
-	<option value="TiszarettentÅ‘">
-    <option value="Tiszanekeresd">
-    <option value="BivalybasznÃ¡di">
-    <option value="TepsiszentgyÃ¶rgy">
-    <option value="nÃ©ha">
-  </datalist>
-  <input type="submit" value="BesubmitolÃ¡s"> kell a submit gombra a value&gt attri, abba Ã­rom be, hogy csit is minÃ¡lok, mikor rÃ¡megyek a gombra!
-</form>
-
-  
-<br><br>
-Emmeg egy &ltoutput&gt elem: Big Shaq is ezzel Ã¡llapÃ­totta meg, hogy 2+2=4.
-<br>Ã¶sszerakhatod egy csÃºszkÃ¡bÃ³l (range type input), Ã©s szÃ¡mmezÅ‘bÅ‘l (number type input), majd kijÃ¶n a result.
-  
-<!-- <form action=idekuldjed" oninput="x.value=parseInt(a.value)+parseInt(b.value)"> 0
-  <input type="range" id="a" name="a" value="0">
-  100 +
-  <input type="number" id="b" name="b" value="2">
-  =
-  <output name="x" for="a b"></output>
-  <br><br>
-                            
-  <input type="submit" value="QUICK MATHS">
-</form> -->
-  </div>
-  </section>
-  
-<section class="vacuum">
-<div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
-    </section>
-
-
-  <section class="content3">
-<div>
-<p id="titles"> still HTML forms</p>
-<br>
-Ãgy kell jelszÃ³t Ã­rni - sima password type&gt attri:
-<br><br>
-
-<form action="asdsadasd.php">
-User name:<br>
-<input type="text" name="userid" value="alapÃ©rtelmezett">
-<br>
-User password:<br>
-<input type="password" name="psw" value="alapÃ©rtelmezett"> amit ideÃ­rsz karaktereket, azt asteriskekbe vagy pettyekbe jelenÃ­ti meg (mÃ©g jÃ³hogy nem Obeliszkekbe HAHAHAHAHAH). <br>
-<br> <input type="reset" value="reszetreteszelÃ©s"> vissza tudom Ã¡llÃ­tani defaultra
-</form>
-
-<br><br>
-
-<form action="/ezaz_amaz.php">
-<input type="checkbox" name="ez van neki" value="Pen">I have a pen.
-<br>
-<input type="checkbox" name="meg ez" value="Apple">I have an apple.
-<br><br>
-<input type="submit" value="Applepen">
-<br> kell a name is meg a value attri is!!!
-</form>
-
-<br><br>
-
-<input type="button" onclick="alert('HellÃ³, mi?!')" value="input button vagyok">
-<br> mÃ©g nem tom pontosan mibe kÃ¼lÃ¶nbÃ¶zik a sima button gombtÃ³l, de ez input button
-
-<br><br>
-
-<ins>WHÃ‰Ã‰Ã‰Ã‰Ã‰Ã‰S most a legÃºjabb HTML5 inputtÃ¡jpszok, csak Ã­gy Ã¶mlesztve: </ins>
-<br><br>
-itt egy kolorpikker: <input type="color" name="favcolor" value="#ff0000">
-  <input type="submit">
-<br><br>
-Mikor szÃ¼lettÃ©l, Margit?  <input type="date" name="bday">
-  <input type="submit">
- <br><br>
- Percre pontosan!  <input type="datetime-local" name="bdaytime">
-  <input type="submit" value="Send"> datetime-local patriÃ³ta!
-  <br><br>
-  Esetleg feliratkoznÃ¡l a hÃ­rlevelÃ¼nkre, bÃ¡$tya? Tedd meg! <input type="email" name="email">
-  <input type="submit">
-  <br><br>
-  Nesze hÃ³nap: <input type="month" name="bdaymonth">
-  <input type="submit">
-  <br><br>
-  Nesze szÃ¡m:  <input type="number" name="quantity" min="1" max="5">
-  <input type="submit">
-  <br><br>
-  TizessÃ©vel lÃ©ptetÃ©s 30-rÃ³l indulva 0-tÃ³l 10-ig:   <input type="number" name="quantity"
-   min="0" max="100" step="10" value="30">
-  <input type="submit">
-  <br><br>
-  Guglizz rÃ¡:   <input type="search" name="googlesearch">
-  <input type="submit">
-  <br><br>
-  Ez itt read only, mert nem tudsz rÃ¡menni: <input type="text" name="firstname" value ="HellÃ³" readonly>
-  <br><br>
-  Ez meg disabled: <input type="text" name="firstname" value ="BÃ©la vagyok" disabled size="50"> a size-om 50-es
-  <br><br>
-  van itt mindenfÃ©le formkÃ¶csÃ¶gsÃ©g...ezeket nem vÃ¡gom mire valÃ³k &nbsp&nbsp&nbsp&nbsp&nbsp???????
-  <br><br>
-  image submitgomb: <input type="image" src="gomb.jpg" alt="SubmitolÃ³ kÃ©p" width="48" height="48">
-  <br><br>
-  file input type multiple-lel, vagyis tÃ¶bb cucot is be lehet submitolni: <input type="file" name="img" multiple>
-  <input type="submit">
-  <br><br>
-  automplete attri: megjegyzi Ã©s megjelenÃ­ti a mÃ¡r beÃ­rt adatokat
-  
-  <br> novalidate attri: valami olyasmi, hogy submitolÃ¡or nem kÃ©r megerÅ‘sÃ­tÃ©st
-  
-  <br> formnovalidate attri: ugyanÃ­gy az egÃ©szre nem kÃ©r, KIVÃ‰E erre az inputra, amit formnovalidate-tel lÃ¡ttam el
-  
-  <br> formenctype attri: valami attri fÃ¡jlfeltÃ¶ltÃ©snÃ©l
-  
-  <br> autofocus attribute: if I write 'autofocus' attri to the end of its line, the cursor jumps here when the page loads <input type="text" name="autofocus" value ="YO!">
-  
-  <br> id from + form formmal az is formtag ami nemis
-  
-  <br> formaction attriba beÃ­rok egy mÃ¡dlagos submitolÃ¡si ocpiÃ³t
-  
-  <br> formtarget attri ---&gt Ãºj lapra submitolÃ¡s
-  
-  <br> pattern attri: kikÃ¶tÃ¶m, hogy mit vÃ¡rok el pontosan, pl. irÃ¡nyÃ­tÃ³szÃ¡m esetÃ©{0-9} (4) <input type="text" name="iranyitoszam" pattern="[0-9]{4}" 
-    title="NÃ©gy szÃ¡m adhatÃ³ meg.">
-  
-  <br> <input type="text" name="fname" placeholder="placeholder vagyok">
-  
-  <br> Ã‰n egy required text type vagyok (vagyis kÃ¶telezÅ‘ engem kitÃ¶lteni): <input type="text" name="usrname" required>
-  
-  <br> Ã‰n meg ilyen step attri matyi (hÃ¡rmassÃ¡val lÃ©pkedek): <input type="number" name="points" step="3">
-
-<!--na szevasz! Ã©n egy jegyzetke vagyok -->
-
-</div>
-    </section>
-
-
-
-<section class="vacuum">
-<div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
-    </section>
-
-
-
-
-
-<section class="content4">
-<div>
-<p id="titles">HTML5!!</p>
-
-First of all, NEM ÃRUNK Ã‰KEZETET DIVBE Ã‰S IDBE!! MiÃ³ta UTF-8-ra Ã¡llÃ­tottam, azÃ³ta megtanultam...
-
-
-
-<br> <section>
-<h2>Ez itt egy section cÃ­m</h2>
-<p>sectionvagyoksectionvagyoksectionvagyoksectionvagyoksectionvagyok</p>
-</section>
-
-<section>
-<h2>Ez itt egy mÃ¡sik section</h2>
-<p>Ã©nisÃ©nisÃ©nisÃ©nisÃ©nisÃ©nisÃ©nisÃ©niusÃ©insÃ©insÃ©nisÃ©nisÃ©nÃ©isÃ©nisÃ©nisÃ©n</p>
-</section>
-a section meg az article kÃ¶zÃ¶tt mi a kÃ¼lÃ¶nbsÃ©g??
-<br> header, footer, aside...
-<br> <nav>
-  <a href="/html/">Ã‰n</a> |
-  <a href="/css/">Egy</a> |
-  <a href="/js/">Nav</a> |
-  <a href="/jquery/">Vagyok</a>
-</nav>
-<br>
-HTML5Shiv mire valÃ³?? valami javascriptes genyÃ³ (HTML5 Browser Support)
-<br> Akkor most a section, article, meg a div ugyanaz??
-<br><br><br> <strong> Egy kis Style Guide: </strong>
-<br> image-ekhez mindig kell alt meg width height!!
-<br> be ne vÃ¡gjak ide egy tablet..! (csak azÃ©rt hogy lÃ¡sd a sourceban, mikor Ã©rdemes indentationt hasznÃ¡lni)
-<br> <table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>A</td>
-    <td>Description of A</td>
-  </tr>
-  <tr>
-    <td>B</td>
-    <td>Description of B</td>
-  </tr>
-</table>
-<br> elejÃ©n a html tagben lang attrit deklarÃ¡lni kel, mert screen readers, keresÅ‘motorok, ilyesmi!!
-<br> JavaScript idecsalogatÃ³ script is van, mint a stylesheet link az elejÃ©n
-
-</div>
-  </section>
-
-
-
-
-
-
-<section class="vacuum">
-<div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
-    </section>
-
-
-
-
-<section class="content5">
-<div>
-<p id="titles">HTML Graphics</p>
-<br> <strong> HTML Canvas: </strong>
-<br>itt egy karika egy rectangle-ben: <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
- <script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.beginPath();
-ctx.arc(95,50,40,0,2*Math.PI);
-ctx.stroke();
-</script> 
-&nbsp&nbsp&nbsp lehet ezzel mindenfÃ©le szart: <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
-ez inkÃ¡bb ilyen jÃ¡vaszkrpites mozgÃ³geci
-<br><br>
-
-<strong>HTML SVG:</strong>
-<br> <svg width="100" height="100">
-  <circle cx="50" cy="50" r="40"
-  stroke="green" stroke-width="4" fill="yellow" />
-</svg>
-
-vagy
-
-<svg width="400" height="100">
-  <rect width="400" height="100" 
-  style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
-</svg>
-
-esetleg
-
-<svg height="130" width="500">
-  <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"
-      style="stop-color:rgb(255,255,0);stop-opacity:1" />
-      <stop offset="100%"
-      style="stop-color:rgb(255,0,0);stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
-  <text fill="#ffffff" font-size="45" font-family="Verdana"
-  x="50" y="86">KÃ¶csg</text>
-</svg>
-ez meg sima svg tag-es mozgÃ³geci
-<br><br>
-
-<strong>HTML Google Maps:</strong>
-
-</div>
-  </section>
-
-<section class="map">
-<div>
-
-<!--------- THIS ONE GOES TO JAVASCIPT
-
-<script>
-function myMap() {
-var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.12),
-    zoom: 10,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-}
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
-</script>
-
-------------->
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-  <!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
-<p>API key required in order to attach Google Maps script here.</p>
-  </div>
-  </section>
-    </section>      <!-- wattafack does this one close?? -->
-    
+    		<article class="post">
+			<h2 id="titles">A Strong Opinion On a Thing That Just Happened</h2>
+			<img class="picture" src="http://i.imgur.com/JS1RcVU.jpg" alt="A man jumping in the desert">
+			<p>Phasellus ac orci et magna elementum vulputate. Mauris volutpat sodales leo, sit amet ornare risus. Mauris ornare lorem a tincidunt vulputate. Curabitur hendrerit eros dictum, ultricies libero id, aliquet nunc. Suspendisse dolor dui, bibendum id consequat ac, efficitur at ante. Pellentesque id rhoncus orci. Nulla varius ex eu urna semper, ac feugiat diam varius.</p>
+			<a href="#">Read more</a>
+		</article>
+      
+		<article class="post">
+			<h2 id="titles">A Listicle For You and Your Boyfriend</h2>
+			<img class="picture" src="http://i.imgur.com/q80S4Ro.jpg" alt="Girls laughing together">
+			<p>Aliquam ut porta orci, ac venenatis diam. Aliquam facilisis quam nec dolor ornare ultrices. Nulla laoreet semper quam eleifend commodo. Ut facilisis dui nec sapien tempor placerat. Nulla non ornare lorem. Nunc efficitur ipsum et nibh feugiat, eu fringilla risus aliquet.</p>
+			<a href="#">Read more</a>
+		</article>
+      
+		<a class="load">Load more stories...</a>
+      
+      </div>
   </main>
-    <footer>
-    </footer>
+  
+  <footer>
+    <div class="footer-wrapper">
+      <small>©2019 <strong>Smaragd faszú biztonságiõr</strong>, All Rights Reserved</small>
+      <nav class="footer-nav">
+        <a href="#">Back to Top</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy</a>
+      </nav>
+    </div>
+  </footer>
                       
 </body>
 </html>
