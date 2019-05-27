@@ -63,21 +63,18 @@ img {
 
           /*========== BASE STYLES ===========*/
 
+/*
+.bg {
+  background: url('https://i.imgur.com/j2dxkSX.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+} */
 
 body {
-  width: 100%;
-  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
   font-size: 1rem;
   font-family:  'Arial', 'Helvetica', sans-serif;
-}
-
-a {
-  font-family: 'Six Caps', sans-serif;
-}
-
-a:hover {
-    color: #eda087;
-    transition: color .15s ease-in-out;
 }
 
 p {
@@ -85,59 +82,14 @@ p {
   padding: .5rem;
 }
 
-   /*============ HEADER STYLES ===========*/
-
-
-
-.box-text-wrapper {
-  display: table-cell;
-  vertical-align: middle;
+a {
+  text-decoration: none;
 }
 
-.box-text {
-  margin: 0 auto;
-  padding: .625rem;
-  color: hsla(0,0%,100%,.9);
-  background: hsla(100,0%,0%,.5);
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8rem;
 }
-
-.box-text h1 {
-  font-size: 3.15rem;
-  color: #d2ba87;
-  margin-bottom: 0; /* To negate the effect of the single-direction margin declaration. */
-}
-
-.tagine {
-  font-size: 1.25rem;
-  letter-spacing: .17rem;
-}
-
-.tagline::after {
-  display: block;
-  content: "";
-  background-color: #fff;
-  height: 1px;
-  width: 12.515625rem;
-  margin: .5rem auto;
-}
-
-.date {
-  font-size: .8rem;
-  letter-spacing: .3rem;
-  vertical-align: left;
-}
-
-.date::before,
-.date::after {
-  display: inline-block;
-  content: "";
-  background-color: #fff;
-  height: 1px;
-  width: 1.5rem;
-  vertical-align: middle;
-  margin: 0 .5rem;
-}
-
 
         /* ============= HEADER NAV STYLES ============ */
 
@@ -155,10 +107,9 @@ ul {
 }
 
 .header-nav a {
-  text-decoration: none;
-  text-align: center;
+  text-decoration: ;
   display: block;
-  padding: .5rem 2rem;
+  padding: .3rem 2rem;
   color: #fff;
 }
 
@@ -168,77 +119,92 @@ ul {
 
 .header-nav a:hover {
   background-color:  rgba(28, 18, 64);
-  transition:  .10s ease-in-out;
+  transition:  .12s ease-in-out;
 }
 
-li {
-  display: inline;
+.socials li {
+  display: inline-block;
 }
 
-/* ==== HELPER COLORS FOR MAIN ==== */
-
-
-.main-header {
-  background-color: rgba(255, 248, 53, .3);
+header nav {
+  text-align: center;
 }
 
-.primary-content {
-  background-color: rgba(140, 96, 255, .3);
+   /*============ HEADER STYLES ===========*/
+
+
+.box-text {
+  background: rgba(28, 18, 64);
+  text-align: center;
+  height: 240px;
+  padding-top: 2.4rem;
 }
 
-.post {
-  background-color: rgba(255, 0, 0, .3);
+.box-text h1 {
+  font-size: 6rem;
+  font-family: 'Six Caps', sans-serif;
+  color: white;
+  letter-spacing: .1rem;
+  margin-bottom: 2rem; /* 0 is to negate the effect of the single-direction margin declaration. */
 }
+
+.date {
+  font-size: 14px;
+  letter-spacing: .2rem;
+  vertical-align: left;
+    color: white;
+
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.2rem;
+vertical-align: middle;
+  margin: 0 .5rem;
+}
+
 
       /*============ MAIN STYLES ===========*/
 
 
-.post {
+artile {
   width: 90%;
   margin: 20px;
-}
-
-
-#titles {
-	font-family: 'Six Caps', sans-serif;
-	color: black;
-	font-size: 30px;
+  padding: 30px;
 }
 
 .picture {
-  width: 100%;
+  width: 90%;
+  margin: 5%;
 }
 
-        /*============ VACUUM STYLES ===========*/
-
-
-
-.vacuum {
-	background-color: transparent-black;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+main {
+  padding: 2rem;
+  margin: 0rem;
 }
 
-        
-  /*============ VIDEO STYLES ===========*/
+
+/* ==== HELPER COLORS FOR MAIN ==== */
 
 
-figure {
-    height: 0;
-    padding-bottom: 20.25%; /* 16:9 aspect ratio */
-    position: relative;
-    min-height: 200px;
-    min-width: 340px;
-    max-width: 500px;
-    max-height: 270px;
+article {
+  background-color: rgba(255, 0, 0, .3);
 }
 
-figure iframe {
-	position: absolute;
-	width: 100%;
-    height: 100%;
+h2 {
+  color:black;
+}
+     
+
+  /*============ VIDEO STYLES =========*/
+
+
+ figure {
+   padding: 2rem;
 }
 
 
@@ -250,23 +216,13 @@ figure iframe {
 
 footer {
   background: url('http://i.imgur.com/f4jGhSF.png') repeat center;
-    height: 8rem;
     text-align: center;
-    display: table;
-    width: 100vw;
-    padding: 1rem;
-    font-family: 'Arial', sans-serif;
-  font-size: .875rem;
-}
-
-.footer-wrapper {
-  display: table-cell;
-  vertical-align: middle;
+    padding: 2rem;
 }
 
 footer small {
-  color: #ccc;
-    letter-spacing: .025rem;
+  color: lightgrey;
+  letter-spacing: .025rem;
   margin-bottom: 1.5rem;
   display: block;
 }
@@ -280,7 +236,7 @@ footer small {
 
 .footer-nav a:hover {
   color: #f26896;
-  transition: color .15s ease-in-out;
+  transition: color .13s ease-in-out;
 }
 
 strong {
