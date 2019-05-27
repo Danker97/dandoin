@@ -171,18 +171,12 @@ ul {
   transition:  .10s ease-in-out;
 }
 
-.ative:hover {
-  color: #000;
-  background-color: #fff;
-  transition: background-color .12s ease-in-out;
+li {
+  display: inline;
 }
 
-
-/* ==== HELPER COLORS FOR NAV ==== */
-
-
-
 /* ==== HELPER COLORS FOR MAIN ==== */
+
 
 .main-header {
   background-color: rgba(255, 248, 53, .3);
