@@ -67,7 +67,8 @@ img {
 body {
   width: 100%;
   background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
-
+  font-size: 1rem;
+  font-family:  'Arial', 'Helvetica', sans-serif;
 }
 
 a {
@@ -79,11 +80,10 @@ a:hover {
     transition: color .15s ease-in-out;
 }
 
-article {
-  width: 90%;
-  margin: 20px;
+p {
+  margin-bottom: 1.25rem;
+  padding: .5rem;
 }
-
 
    /*============ HEADER STYLES ===========*/
 
@@ -107,9 +107,9 @@ article {
   margin-bottom: 0; /* To negate the effect of the single-direction margin declaration. */
 }
 
-.tagline {
+.tagine {
   font-size: 1.25rem;
-  letter-spacing: .15rem;
+  letter-spacing: .17rem;
 }
 
 .tagline::after {
@@ -122,9 +122,9 @@ article {
 }
 
 .date {
-  font-size: 1.25rem;
-  letter-spacing: .15rem;
-  vertical-align: middle;
+  font-size: .8rem;
+  letter-spacing: .3rem;
+  vertical-align: left;
 }
 
 .date::before,
@@ -142,80 +142,78 @@ article {
         /* ============= HEADER NAV STYLES ============ */
 
 .header-nav {
-  background-color: rgba(150, 189, 224);
-  padding: 1rem;
+  background-color: rgba(158, 189, 234);
+  padding: .rem;
+  letter-spacing: .03rem;
+  text-decoration-style: hsla(25, 20%, 78%, 0.50);
+}
+
+ul {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .header-nav a {
   text-decoration: none;
-  font-family: 'Space Mono', monospace;
   text-align: center;
   display: block;
-  padding: .5rem 1rem;
+  padding: .5rem 2rem;
   color: #fff;
 }
 
+.active {
+  background-color: rgba(28, 18, 64);
+}
+
 .header-nav a:hover {
-  color: hsl(0, 0%, 77%);
-  transition: color .15s ease-in-out;
+  background-color:  rgba(28, 18, 64);
+  transition:  .10s ease-in-out;
 }
 
-.sign-up {
-  border: 1px solid hsla(0,0%,100%,.2);
-  border-radius: 9999px;
-}
-
-.sign-up:hover {
+.ative:hover {
   color: #000;
   background-color: #fff;
-  transition: background-color .15s ease-in-out;
+  transition: background-color .12s ease-in-out;
 }
 
-@media (min-width: 768px) {
 
-  .header-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
+/* ==== HELPER COLORS FOR NAV ==== */
 
-  .header-nav a {
-    float: right;
-  }
 
-  .home {
-    float: left;
-  }
 
-    /* Clearfix */
-    nav::after {
-      content: "";
-      clear: both;
-      display: block;
-    }
+/* ==== HELPER COLORS FOR MAIN ==== */
 
+.main-header {
+  background-color: rgba(255, 248, 53, .3);
 }
 
-section {
-  font-size: 1rem;
-  font-family: 'Space Mono', monospace;
+.primary-content {
+  background-color: rgba(140, 96, 255, .3);
 }
 
-@media (min-width: 768px) {
-
-  section {
-    width: 60%;
-    margin: 5.25rem auto 1.25rem;
-  }
-
+.post {
+  background-color: rgba(255, 0, 0, .3);
 }
 
-p {
-  margin-bottom: 1.25rem;
-  padding: .5rem;
+      /*============ MAIN STYLES ===========*/
+
+
+.post {
+  width: 90%;
+  margin: 20px;
 }
 
+
+#titles {
+	font-family: 'Six Caps', sans-serif;
+	color: black;
+	font-size: 30px;
+}
+
+.picture {
+  width: 100%;
+}
 
         /*============ VACUUM STYLES ===========*/
 
@@ -229,62 +227,9 @@ p {
 	background-size: cover;
 }
 
-
-        /*============ CONTENT STYLES ===========*/
-
-
-.content1 {
-	background-color: hsla(20, 0%, 50%, .7);
-	padding: 20px;
-}
-
-
-.content2 {
-    background-color: hsla(20, 0%, 50%, .7);
-    padding: 20px;
-}
-
-
-.content3 {
-    background-color: hsla(20, 0%, 50%, .7);
-    padding: 20px;
-}
-
-.content4 {
-	background-color: hsla(20, 0%, 50%, .7);
-	padding: 20px;
-}
-
-.content5 {
-	background-color: hsla(20, 0%, 50%, .7);
-	padding: 20px;
-}
-
-
-        /*============ TITLE STYLES ===========*/
-
-
-#Phillycim {font-family: 'Six Caps', sans-serif;
-	color: #bbc4c9;
-	font-size: 45px;
-}
-
-
-#html5cim {font-family: 'Six Caps', sans-serif;
-	color: black;
-	font-size: 45px;
-}
-
-
-#titles {
-	font-family: 'Six Caps', sans-serif;
-	color: black;
-	font-size: 45px;
-}
-
-
         
-          /*============ VIDEO STYLES ===========*/
+  /*============ VIDEO STYLES ===========*/
+
 
 figure {
     height: 0;
