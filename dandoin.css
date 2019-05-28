@@ -63,32 +63,21 @@ img {
 
           /*========== BASE STYLES ===========*/
 
-/*
-.bg {
-  background: url('https://i.imgur.com/j2dxkSX.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover;
-} */
 
 body {
+  width: 100%;
   font-size: 1rem;
   font-family:  'Arial', 'Helvetica', sans-serif;
-}
-
-p {
-  margin-bottom: 1.25rem;
-  padding: .5rem;
 }
 
 a {
   text-decoration: none;
 }
 
-h2 {
+h3 {
   font-family: 'Lato', sans-serif;
-  font-size: 1.8rem;
+  font-size: ;
+  padding-bottom: 0px;
 }
 
         /* ============= HEADER NAV STYLES ============ */
@@ -145,7 +134,7 @@ header nav {
   font-family: 'Six Caps', sans-serif;
   color: white;
   letter-spacing: .1rem;
-  margin-bottom: 2rem; /* 0 is to negate the effect of the single-direction margin declaration. */
+  margin-bottom: 2.5rem; /* 0 is to negate the effect of the single-direction margin declaration. */
 }
 
 .date {
@@ -153,7 +142,6 @@ header nav {
   letter-spacing: .2rem;
   vertical-align: left;
     color: white;
-
 }
 
 .date::before,
@@ -171,40 +159,66 @@ vertical-align: middle;
       /*============ MAIN STYLES ===========*/
 
 
-artile {
-  width: 90%;
-  margin: 20px;
-  padding: 30px;
-}
-
 .picture {
   width: 90%;
   margin: 5%;
 }
 
 main {
-  padding: 2rem;
-  margin: 0rem;
+  padding: 1rem;
+  background-color: white;
 }
 
+.posted {
+  font-size: 13px;
+  letter-spacing: .01rem;
+  vertical-align: left;
+  color: lightslategray;
+  opacity: 0.6;
+}
+
+.posted::before,
+.posted::after {
+    display: inline-block;
+  content: "";
+  background-color: lightgrey;
+  height: .7px;
+  width: 2rem;
+vertical-align: middle;
+  margin: .3rem;
+  opacity: 0.6;
+}
+
+.titles {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+}
+
+.picpost {
+  margin-top: 2.5rem;
+}
+
+.newpost {
+   margin-top: 5rem;
+}
+
+
+.show-more {
+  padding: 2rem;
+  margin-top: 4rem;
+}
 
 /* ==== HELPER COLORS FOR MAIN ==== */
 
 
-article {
-  background-color: rgba(255, 0, 0, .3);
-}
 
-h2 {
-  color:black;
-}
      
 
-  /*============ VIDEO STYLES =========*/
+  /*============ VIDEO STYLES =============*/
 
 
  figure {
-   padding: 2rem;
+   padding: 3rem;
 }
 
 
