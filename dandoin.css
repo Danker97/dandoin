@@ -83,15 +83,15 @@ h3 {
 
 .header-nav {
   background-color: rgba(158, 189, 234);
-  padding: .rem;
-  letter-spacing: .03rem;
+  padding: 0rem;
+  letter-spacing: .1rem;
   text-decoration-style: hsla(25, 20%, 78%, 0.50);
 }
 
 ul {
   border: 0px;
   padding: 0px;
-  margin: 0px;
+  margin: 0rem;
 }
 
 .header-nav a {
@@ -112,9 +112,11 @@ ul {
 
 .socials li {
   display: inline-block;
+  
 }
 
-header nav {
+
+.header-nav {
   text-align: center;
 }
 
@@ -203,16 +205,23 @@ vertical-align: middle;
 
 
 .show-more {
-  padding: 2rem;
-  margin-top: 4rem;
-}
+  padding: 4rem;
+  }
+
 
 main p {
   font-family: 'Quattrocento', serif;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
 }
 
+
+#more {display: none;}
+
+
+button {
+  
+}
 
 /* ==== HELPER COLORS FOR MAIN ==== */
 
@@ -261,4 +270,71 @@ footer small {
 
 strong {
   font-weight: 700;
+}
+
+
+
+          /*============  MEDIA QUERIES ===========*/
+
+
+
+@media (min-width: 768px) {
+
+  .header-nav {
+    top: 0rem;
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+    font-size: 0.85rem;
+    position:fixed;
+  }
+
+    .header-nav ul {
+    display: inline-block;
+      margin: 0rem;
+      padding: 0rem;
+  }
+  
+  
+  .header-nav li {
+    display: inline-block;
+    width: 7.8rem;
+  }
+  
+  
+  .header-nav a {
+    text-align: center;
+    padding: 1rem;
+    margin: 0rem;
+  }
+  
+  .socials li {
+    display: inline-block;
+    width: 4rem;
+  }
+  
+}
+
+
+@media (min-width: 768px) {
+
+  .box-text-wrapper {
+    width: 100%;
+    margin-top: 3.34rem;
+  }
+  
+  
+
+@media (min-width: 768px) {
+
+  .main-wrapper {
+    width: 60%;
+    margin: 5.25rem auto 1.25rem;
+  }
+
+}
+
+p {
+  margin-bottom: 1.25rem;
+  padding: .5rem;
 }
